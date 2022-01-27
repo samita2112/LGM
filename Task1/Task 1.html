@@ -1,7 +1,7 @@
 <!doctype html>
-
 <html lang="en">
     <head>
+      <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous">  
         <link
@@ -15,9 +15,7 @@
     />
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    </head>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  </head>
     <title>Zippy</title>
     <style>
         .carousel-item {
@@ -507,21 +505,21 @@
           <div  class="carousel-item active">
             <button  hidden="true"></button>
             <video  width="1120" height="700" controls autoplay>
-                <source src="LOGO.mp4" type="video/mp4">
+                <source src="assets/LOGO.mp4" type="video/mp4">
               </video>
             
       </div>
       <div class="carousel-item">
         <button  hidden="true"></button>
         <video width="1120" height="700" controls>
-            <source src="LOGO.mp4" type="video/mp4">
+            <source src="assets/LOGO.mp4" type="video/mp4">
           </video>
             
       </div>
       <div class="carousel-item">
         <button  hidden="true"></button>
         <video id="banner-video" width="1120" height="700" controls>
-            <source src="LOGO.mp4" type="video/mp4">
+            <source src="assets/LOGO.mp4" type="video/mp4">
           </video>
             
       </div>
@@ -626,7 +624,7 @@
       
         <div class="mySlides">
           <div class="numbertext">5 / 6</div>
-            <img src="assets/zippylife5.jpg" style="width:100%">
+            <img src="assets/zippylife5.png" style="width:100%">
         </div>
       
         <div class="mySlides">
@@ -658,7 +656,7 @@
             <img class="demo cursor" src="assets/zippylife4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Life in Zippy">
           </div>
           <div class="column">
-            <img class="demo cursor" src="assets/zippylife5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Life in Zippy">
+            <img class="demo cursor" src="assets/zippylife5.png" style="width:100%" onclick="currentSlide(5)" alt="Life in Zippy">
           </div>
           <div class="column">
             <img class="demo cursor" src="assets/zippylife1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Life in Zippy">
@@ -724,17 +722,17 @@
                         aria-hidden="false"
                         tabindex="0">
                 </iframe>
-    <div style="background-color: rgba(255, 255, 0, 0.616);margin-left:40%;margin-top:-40%;height:600px">
+    <div style="background-color: rgba(255, 255, 0, 0.616);margin-left:40%;margin-top:-41%;height:600px">
         <h1 style="color:black;padding-left:1%" >Contact</h1> 
         <form style="padding-left:1%">
-        <label for="email"><b>Name</b></label>
-        <input type="text" placeholder="Enter Name" name="email" required>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
-        <label for="email"><b>Subject</b></label>
-        <input type="text" placeholder="Enter Sublect" name="email" required>
-        <label for="email"><b>Message</b></label>
-        <input type="text" placeholder="Enter Message" name="email" required>
+        <label for="sub"><b>Subject</b></label>
+        <input type="text" placeholder="Enter Subject" name="sub" required>
+        <label for="msg"><b>Message</b></label>
+        <input type="text" placeholder="Enter Message" name="msg" required>
         
         <a  style="border-color:#9269d4; background-color:#9269d4;margin-left:43%;margin-top:4%;" class="btn btn-primary">Send</a>
     </form>
