@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from "./Home";
+import React,{useState} from 'react';
+import {Button} from 'react-bootstrap';
 function App() {
+  const [user,setUser] = useState(false);
+  
+  const getdata =() =>{
+    setUser(true)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <nav className="navbar">
+      <h1>Exon</h1>
+      <div className="links">
+        <a href="/">Home</a>       
+         <Button onClick={() =>getdata()} style={{ borderColor:'#f1356d',backgroundColor:'#f1356d'}} variant="primary">Get User</Button>
+      </div>
+    
+      <div className="home">
+      {user && <Home />}
+    </div>
+
+    </nav>
     </div>
   );
 }
